@@ -2,6 +2,27 @@
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
+.homepicture {
+  width: 100px;
+  float: left;
+  cursor: pointer;
+  object-fit: cover;
+  aspect-ratio: 1;
+  transition: transform 0.2s;
+}
+
+.headerpicture {
+  width: 100px;
+  float: right;
+  margin-right: auto;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover;
+  aspect-ratio: 1;
+  transition: transform 0.2s;
+}
+
 .picture {
   width: 300px;
   border: 1px solid black;
@@ -18,13 +39,31 @@
   transform: translate(-2px, 2px);
 }
 
-.picture-container {
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+/*.picture-container {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
   margin: auto;
   gap: 12px;
-}
+}*/
 
 body {
   background-color: white;
@@ -32,8 +71,52 @@ body {
   color: black;
 }
 
+
 .page-container {
   width: 80%;
   margin-top: 5rem;
   margin: auto;
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  /*background-color: #333;*/
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(239, 151, 113);
+  transform: translate(-2px, 2px);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #fe81d7;
+  color: white;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
