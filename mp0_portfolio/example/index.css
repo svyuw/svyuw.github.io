@@ -1,3 +1,7 @@
+.heart {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
 .picture {
   width: 300px;
   border: 1px solid black;
@@ -5,10 +9,13 @@
   cursor: pointer;
   object-fit: cover;
   aspect-ratio: 1;
+  transition: transform 0.2s;
 }
 
 .picture:hover {
   filter: brightness(80%);
+  /*clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);*/
+  transform: translate(-2px, 2px);
 }
 
 .picture-container {
@@ -20,9 +27,9 @@
 }
 
 body {
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  color: black;
 }
 
 .page-container {
