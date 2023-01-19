@@ -18,3 +18,63 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
+
+.homepicture {
+  width: 200px;
+  float: left;
+  cursor: pointer;
+  object-fit: fit;
+  aspect-ratio: 1;
+  transition: transform 0.2s;
+  margin-right: 100px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 1;
+}
+
+.headerpicture {
+  width: 120px;
+  float: right;
+  margin-right: auto;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover;
+  aspect-ratio: 1;
+  transition: transform 0.2s;
+}
+
+.picture {
+  width: 300px;
+  /*border: 1px solid black;*/
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  object-fit: cover;
+  aspect-ratio: 1;
+  transition: transform 0.2s;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.topnav a:hover {
+  transform: translate(-2px, 2px);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}
+
