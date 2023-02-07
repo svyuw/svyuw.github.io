@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./soundreflection.css" />
+   <link rel="stylesheet" href="./reflection.css" />
+    <div class="topnav">
+      
+      <div class="homepicture">
+        <a class="active" href="../index.html">
+          <img
+                class="homepicture"
+                src="pic5.png"
+              />
+        </a> 
+      </div>
+      
+      <div class="tabs">
+        <a href="../bio/bio.html">
+          <img
+                class="headerpicture"
+                src="pic1.png"
+              />
+        </a>
+
+        <a href="../recipe/recipe.html">
+          <img
+          class="headerpicture"
+          src="pic2.png"
+        />
+      </a>
+    </div>
+    </div>
+  </head>
+
+
+  <body>
+    <div class="recipe-container">
+      <h1>MP2 Reflection</h1>
+      <h2>Reflection on Sound Exploration Assignment</h2>
+      <h3>Overview</h3>
+      <p> For this assignment, we made six sketches using P5.js to make art with code. 
+        <br>
+        <br>
+        To start off, I took some time to experiment with the P5.js editor. I started with the static image and thought about what I would like to make -- 
+        I decided on a fun and bright static image of a person. With this sketch, I used a <code>forloop</code> to create the background. For my second sketch, I didn't really 
+        have a plan for what I wanted my sketch to look like, but I started with generating random shapes (ellipses, rectangles, and triangles) that would populate the background.
+        I also had them be random colors. I wanted to have a centerpiece to the sketch, so I made a static heart in the middle of the canvas. With my third sketch, I felt 
+        like I wanted to carry on with the rainbow / heart theme that I had going, so I tried making a heart that changed colors. I first made a singular small heart 
+        through reusing the same code as in my second sketch. My next step was to make it loop through the colors of the rainbow. Then, I accidentally made the heart grow bigger -- 
+        which turned out to be an accident that I liked the result of. For my fourth sketch, I made an interactive sketch where the user can draw on the canvas and have rainbow
+        circles appear. These circles are closer together based off of speed of the user's mouse, and fade after a couple of seconds. My fifth sketch consists of the user clicking the 
+        canvas to play the sound "Be Your Girl (Kaytranada Edition)" by Teedra Moses and KAYTRANADA. If the user hasn't clicked the canvas, there is just a pink screen that says 
+        "click me to party!". After the user has clicked on the canvas, the screen turns different colors based on the position of the mouse on the canvas. My final sketch 
+        consists of sound input that results in rainbow colored circles that are larger if the sound input is larger. 
+        <br>
+        <br>
+        <div>
+            Here is what sketch four looks looks like: 
+            <br>
+              <img src="sketch4.gif" class="gif">
+          </div>
+        <br>
+             To break down my process a bit more, I will discuss sketch three, the infinite loop sketch. To start, I reused the heart from my previous sketch.
+             Then, I made the heart grow and shrink by setting a min, max, and original size for the heart to loop through. Once the heart has reached its max size, 
+             it will start shrinking. Once the heart has reached its min size, the heart will start growing again.
+             Here, you can see the stroke growing and shrinking. 
+          <br>
+          <br>
+          <div>
+            Here is a demo of what the heart looked like as I was working on it: 
+              <img src="sketch3.1.gif" class="gif">
+        </div>
+        <br>
+        <br>
+        I then made it so that the fill was the rainbow by using <code>colorMode(HSB)</code> and then cycling through the colors. 
+        <br>
+        <br>
+        <div>
+          Here is a demo of what the heart looked like as I was working on it: 
+            <img src="sketch3.2.gif" class="gif"> <br>
+        </div>
+        <br>
+        I originally wanted to make six hearts appear on a grid with them all changing colors. However, after playing around with the code, I liked how smooth the 
+        gradient was when I made the max size larger than the canvas width and height. One problem with my code for this heart is that if the screen is bigger than 
+        the max size that I set, then the user will see the blank canvas behind the heart. If I had more time, I think that I would try and make it so that the 
+        max size automatically adjusts to the size of the screen.
+        <br>
+        <div>
+          Here is a demo of everything put together: <br>
+            <img src="sketch3.3.gif" class="gif">
+        </div>
+        <br>
+        <br>
+      </p>
+      <h3>Issues </h3>
+      <p>With this class, I'm focusing on actually trying to enjoy the process of coding instead of biting too big of a bite with my projects and getting frustrated 
+        and stressed by it. I wanted to make something simple and cute that would bring a smile to anyone using it. Overall, I think my most dealt with roadblock while doing this project
+        was how long it takes me to read, process, understand, and then code. It just takes me longer than I would prefer to make progress on my projects. With that being said, I had a 
+        bit of a confusing time figuring out how to correctly format the gif of the seal into where the block was. I ended up making a container to hold the container that was holding the gif
+        of the pet. Then, after experimenting with the code, I found that the best way to format the containers was keeping the <code>.page-pet__container</code> with an absolute position
+        and having the <code>.inside-container</code> have a relative position. During this process of looking up possible solutions, I also learned about <code>z-index</code> and decided to use it to 
+        make it easier to make the pets bounce around the page. 
+      </p>
+      <div>
+        <img src="webexissue.png" class="img">
+      </div>
+      
+
+      <h3>Ideas and Future Work</h3>
+      <p>Some ideas for the future include: 
+        <ul style=“list-style-type:circle>
+
+          <li>making the sketches mobile friendly</li>
+          
+          <li>putting one of the interactive sketches on my portfolio</li>
+          
+          
+          </ul>
+
+      </p>
+
+      <h3>Helpful Links and Kudos</h3>
+        <ul style=“list-style-type:circle>
+
+          <li>looking through all the different resources on https://p5js.org/</li>
+          
+          <li>each of the resources linked on the assignment page</li>
+          
+          <li>help with making random shapes and colors for my sketch 2: https://happycoding.io/tutorials/p5js/animation/random-lines</li>
+
+          <li>help with making a rainbow gradient: https://stackoverflow.com/questions/72189619/hsb-smooth-color-transition/<li>
+        
+          <li>help with making the color of the canvas change based on position of mouse: https://www.geeksforgeeks.org/how-to-change-background-color-according-to-the-mouse-location-using-javascript/<li></li>
+          
+          <li>my friend Tim helped me!</li>
+          
+          </ul>
+
+      </p>
+
+
+          
+    </div>
+    </div>
+  </body>
+</html>
