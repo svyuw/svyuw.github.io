@@ -96,14 +96,12 @@ body {
   gap: 12px;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   text-align: center;
