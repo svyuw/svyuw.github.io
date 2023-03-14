@@ -34,7 +34,6 @@
   <body>
     <div class="recipe-container">
       <h1>sarah's cheatsheet</h1>
-      <h2>CSS Section</h2>
 
       <h3>CSS for button text overlay</h3>
       <p>
@@ -63,7 +62,70 @@
             
             <li>bullet 2</li>
         </code>
+
+        <h3>From Web Extension</h3>
+        <p>To remove the div holding the gif:</p>
+        <code>
+          const removeBtn = document.createElement("div");
+          removeBtn.classList.add("content-btn");
+          removeBtn.classList.add("remove-btn");
+          const xIcon = document.createElement("img");
+          xIcon.src =
+            "https://icons-for-free.com/download-icon-x+icon-1320166903649367557_512.png";
+          xIcon.width = 25;
+          xIcon.height = 25;
+          removeBtn.appendChild(xIcon);
+          removeBtn.addEventListener("click", () => {
+            deleteElement(pagePetContainer);
+          });
+        </code>
+
+        <h3>From Sound Exploration</h3>
+        <p>Setting up the canvas and loading a song</p>
+        <code>
+          let song;
+          function setup() {
+            song = loadSound('beyourgirl.mp3');
+            createCanvas(windowWidth, windowHeight);
+            colorMode(HSB);
+            background(350, 25, 100);
+            const inc = height/100;
+          }
+        </code>
         
+      <h3>Using P5.Play</h3>
+      <p>Using keypressed:</p>
+      
+      <code>
+        function keyPressed() {
+          if (key === "ArrowUp") {
+            cat.velocity.y = -5;
+          } else if (key === "ArrowDown") {
+            cat.velocity.y = 5;
+          } else if (key === "ArrowLeft") {
+            cat.velocity.x = -5;
+          } else if (key === "ArrowRight") {
+            cat.velocity.x = 5;
+          }
+          };
+      </code>
+      <br>
+      <br>
+      <p>Using keyReleased:</p>
+      <code>
+        function keyReleased() {
+          if (key === "ArrowUp" || key === "ArrowDown") {
+            cat.velocity.y = 0;
+          } else if (key === "ArrowLeft" || key === "ArrowRight") {
+            cat.velocity.x = 0;
+          }
+      }
+      </code>
+      <br>
+      <br>
+
+
+
     </p>
     </div>
   </body>
