@@ -50,64 +50,30 @@
           <br>
           <h3>Development Process</h3>
           <ol type="1">
-            <li>Refreshed my memory on my original web extension</li>
-            <li>Used the Unsplash API to pull images from to bounce around the screen</li>
-            <li>Looked more into APIs available and popular, and found Tenor API</li>
-            <li>Changed my mind and used Tenor API to make a gif bounce around the screen</li>
-            <li>Once I figured out how to do that, I worked on making the category of dog</li>
-            <li>Then, I made the category of cat</li>
+            <li>Researched how to search with the Tenor API</li>
+            <li>Implemented the search function into the pop-up</li>
             <li>Formatted the popup</li>
          </ol>
          <br>
          <h3>Issue Deep Dive</h3>
-         <p> A problem that I ran into which took me forever to solve was that all of a sudden, the web extension just did not work anymore. 
-            It was working when I closed my laptop after I finished working on it, and the next day it just stopped working. I don't exactly know what 
-            happened, but it seemed like the issue was that the content script just wasn't being loaded. This was the error that kept popping up: 
+         <p> I didn't have too many errors as I set myself up pretty well with my prototype, but I did have this issue where the gif that was being added was not 
+            the same as the gif that I selected. Here is an example: 
              </p>
-             <img src="errormessage.png" class="image">
-             <p> I researched content scripts, googled all of my error messages, and checked Stack Overflow.
-                I eventually switched the receiver from using an arrow function to an anonymous function, which seemed to do the trick and it started working again.
-                This is the code that I ended up using (but changed later):
+             <img src="webexerror.png" class="image">
+             <p> I researched online, and then asked some peers and my issue was a misspelling of the url. This was frustrating as the issue 
+                was a really simple fix, but it got solved pretty quickly. 
             </p>
-             <img src="anonymouspic.png" class="image">
+             <img src="shotofcode.png" class="image">
          <br>
-          <br>
-          <h3>Project Scope</h3>
-        <p> Generally, I don't think that my project scope changed too drastically from my previous plan. A change that I did implement was when I was looking more into 
-            the Unsplash API, I stumbled upon Tenor API which was able to provided gifs instead of just static images. I decided to change APIs, which doesn't affect 
-            the plan of my project. I was actually able to implement all of the primary features that I wanted to add for this prototype, which mainly consisted of the dropdown 
-            menu where the user can choose what category of gif they would like to see.
-            </p>
-        <br>
-        <br> 
-        <h3>Time Management</h3>
-        <p> I think that I could have managed my time better, as I left some of the work to the last minute. There were also parts in this project that 
-            I didn't expect to take so long but did, like researching different types of gif APIs and finally picking the Tenor API. I also got frustrated with 
-            the issue that I discussed in my deep dive and decided to take a break from the project which also did not help my time management. 
-            </p>
-        <br>
-        <br>
-        <br>
-        <h3>Implementation Plan</h3>
-        <p> I don't think that my implementation plan has changed too much, because I am pretty on track with where I wanted to be at the beginning. 
-            I did talk to Hannah, and she did advise me that removing the background of a image and especially a gif would be very difficult, so I 
-            will find an alternative other feature to implement for the final project. I will probably just add more features to the popup and make the web extension 
-            more personalizable for the user, like adding a search function where they can search what type of gif they would want bouncing around the screen. I 
-            would also be interested in letting the user interact with the gif as it bounces around the screen more.
-            </p>
-        <br>
-        <br>
         <br>
       <h3>Ideas and Future Work</h3>
       <p>
         <ul style=“list-style-type:circle>
-          <li>Add more interactions that the user can do with the gif on the page</li> 
-          <li>Add more capabilities of the popup, like a search feature</li>   
+          <li>Publish the web extension to the Google store</li> 
+          <li>Make the pop-up itself look a little nicer</li>   
           </ul>
-
       </p>
       </p>
-
       <h3>Resources</h3>
       <p>
         <ul style=“list-style-type:circle>
